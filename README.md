@@ -22,3 +22,10 @@ python -m pytest
 # pipenv shellで作成されたpythonインタープリター（ランダム文字列）を  
 # VSCODE上で利用するように切り替えると、VSCODE上のテスト拡張機能が使えるようになる（便利）
 ```
+
+## pipenv shellを使わずにpytestできるようになるか？
+- pytest.iniを作成
+- postCreateCommand.shで環境変数を設定
+- devcontainer.jsonの修正は今のところ効果が無い
+- pip install pytestを行うと、pipenv shellなしでもVSCODE上でテストできる
+- でも初めからCodespacesにpytest入っていてコマンドも叩けるので、わざわざpip install したくない
